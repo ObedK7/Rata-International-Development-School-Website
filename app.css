@@ -122,3 +122,110 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* Project styling area */
+
+html {
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+/* nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2em;
+}
+
+ul li {
+  margin: 0.8em;
+} */
+
+.container {
+  background-color: #bf08bf;
+  max-width: 100%;
+  border-bottom-left-radius: 5em;
+  padding-bottom: 5em;
+}
+
+.home_hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 2em;
+}
+
+.home_hero h1 {
+  font-family: "Roboto";
+  font-size: 2em;
+  font-weight: 500;
+  max-width: 24em;
+  text-align: center;
+  line-height: 100%;
+  color: white;
+}
+
+.home_hero p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  max-width: 25em;
+  text-align: center;
+  color: white;
+}
+
+.home_links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  max-width: 100%;
+}
+
+.home_links a {
+  text-decoration: none;
+  padding: 0.8em;
+  margin-top: 2em;
+  border-radius: 2em;
+  width: 8em;
+  text-align: center;
+  border: 1px solid black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.home_links .learn_more {
+  background-color: white;
+  color: #bf08bf;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.home_links .learn_more:hover {
+  background-color: #babefc;
+  color: #bf08bf;
+}
+
+.home_links .apply_now {
+  color: rgb(255, 254, 254);
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.home_links .apply_now:hover {
+  background-color: #08bfbf;
+  color: black;
+}
