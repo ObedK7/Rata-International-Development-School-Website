@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./app.css">
 </head>
 
@@ -43,7 +48,11 @@
 
     <section>
         <div class="hero_statement">
-            <div class="statements">
+            <div class="statements_container">
+                <p>Designed for the future</p>
+                <div class="school_image_container">
+                    <img src="./images/culture.png" alt="School Image" class="school_image">
+                </div>
                 <h2 class="mission_heading">Our Mission</h2>
                 <p>At Rata International Development School, our mission is to empower students with the knowledge,
                     skills,
@@ -58,40 +67,34 @@
                     arts,
                     technology, and physical education.</p>
             </div>
-            <div class="school_image_container">
-                <img src="school.jpg" alt="School Image" class="school_image">
-            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about_us">
+            <h2>About Us</h2>
+            <p>Welcome to Rata International Development School! We are a leading educational institution dedicated to
+                providing a high-quality education that nurtures the whole child.</p>
+        </div>
+
+
+        <div class="event">
+            <h2>Events</h2>
+            <p>Join us for our upcoming events! We have a variety of activities and programs planned throughout the
+                year, including cultural festivals, sports tournaments, and community service projects. Stay tuned for
+                more information on our website and social media channels.</p>
         </div>
     </section>
 
     <section>
-        <h2>About Us</h2>
-        <p>Welcome to Rata International Development School! We are a leading educational institution dedicated to
-            providing a high-quality education that nurtures the whole child.</p>
-    </section>
-
-    <section class="event">
-        <h2>Events</h2>
-        <img src="event.jpg" alt="Event Icon" class="event_icon">
-        <p>Join us for our upcoming events! We have a variety of activities and programs planned throughout the
-            year, including cultural festivals, sports tournaments, and community service projects. Stay tuned for
-            more information on our website and social media channels.</p>
-        <div class="event_image">
-            <img src="#" alt="Graduation ceremony">
-            <img src="#" alt="Cultural dance">
-            <img src="#" alt="Sports tournament">
-        </div>
-    </section>
-
-    <section>
-        <div class="contact_us">
+        <div class="home_contact_us">
             <h2>Contact Us</h2>
             <form>
-                <label for="name">Full Name:</label>
+                <label for="name"></label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                <label for="email"></label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
+                <label for="message"></label>
                 <textarea id="message" name="message" maxlength="500" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
