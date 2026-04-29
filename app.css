@@ -160,7 +160,6 @@ ul li {
   border-bottom-left-radius: 5em;
   padding-bottom: 5em;
   background-image: url(./images/child_learning.png);
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,7 +177,7 @@ ul li {
 }
 
 .home_hero h1 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 2em;
   font-weight: 500;
   max-width: 24em;
@@ -219,7 +218,7 @@ ul li {
 .home_links .learn_more {
   background-color: white;
   color: #bf08bf;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   border: none;
 }
@@ -235,7 +234,7 @@ ul li {
 
 .home_links .apply_now {
   color: white;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
 
@@ -273,7 +272,7 @@ ul li {
 }
 
 .statements_container h2 {
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.5em;
   font-weight: 600;
   max-width: 100%;
@@ -304,11 +303,7 @@ ul li {
 }
 
 .about {
-  /* background-color: #49928f; */
-  background-image: url(./images/about_background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(29, 42, 56);
   border-bottom-left-radius: 4em;
   border-top-right-radius: 4em;
   display: flex;
@@ -384,26 +379,54 @@ ul li {
   border-radius: 50%;
 }
 
-.home_contact_us {
-  background-color: #49928f;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 2em;
-  padding: 5em;
+#home_contact_us {
+  min-height: 50vh;
+  text-align: center;
+  margin: 5em auto;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  max-width: 100%;
-}
-
-form label {
+#home_contact_us h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
-  font-weight: 300;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 2em;
+  max-width: 50%;
+  margin: 1em auto;
+}
+
+input {
+  margin: 1em auto;
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 1px solid black;
+  outline: none;
+}
+
+form button {
+  border-radius: 1.2rem;
+  padding: 1.25em;
+  border: none;
+  background-color: rgb(29, 42, 56);
+  margin-top: 3em;
+  transition: background-color 0.3s ease-in-out;
   color: white;
+}
+
+#home_contact_us .btn {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  font-family: "Roboto", sans-serif;
+}
+
+#home_contact_us button:hover {
+  background-color: gray;
+  color: black;
+}
+
+.form-example label {
+  border-bottom: 1.5px solid black;
 }
