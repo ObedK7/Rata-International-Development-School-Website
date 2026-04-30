@@ -178,7 +178,8 @@ ul li {
 
 .home_hero h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2em;
+  font-size: clamp(1rem, 2rem + 1.25vw, 3.5rem);
+  padding-top: clamp(1rem, 2rem + 1.25vw, 3.5rem);
   font-weight: 500;
   max-width: 24em;
   text-align: center;
@@ -189,7 +190,8 @@ ul li {
 
 .home_hero p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: clamp(1rem, 0.75rem + 1.25vw, 1.25rem);
+  padding-bottom: clamp(1rem, 0.75rem + 1.25vw, 1.25rem);
   font-weight: 300;
   max-width: 25em;
   text-align: center;
@@ -197,22 +199,38 @@ ul li {
   line-height: 1.25em;
 }
 
+.home_hero span {
+  color: blue;
+  font-style: italic;
+  transition: all 0.3s ease-in-out;
+}
+
+.home_hero span:hover {
+  color: #02c4ff;
+  margin-top: 0.25em;
+  text-decoration: underline;
+  text-shadow: #02c4ff 0px 0px 10px;
+}
+
 .home_links {
   display: flex;
   justify-content: center;
-  gap: 1.5em;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.5em, 0.25em + 1vw, 1.25em);
   max-width: 100%;
 }
 
 .home_links a {
   text-decoration: none;
-  padding: 0.8em;
-  margin-top: 2em;
+  padding: clamp(0.9em, 0.25em + 1vw, 1.25em);
+  margin-top: clamp(0.5em, 0.25em + 1vw, 1.25em);
   border-radius: 2em;
   width: 8em;
   text-align: center;
   border: 1px solid white;
   transition: background-color 0.3s ease-in-out;
+  box-shadow: #02c4ff 0px 1.25px 1px;
 }
 
 .home_links .learn_more {
@@ -226,6 +244,7 @@ ul li {
 .home_links .learn_more:hover {
   background-color: #02c4ff;
   color: white;
+  box-shadow: #02c4ff 0px 0px 10px;
 }
 .home_links .learn_more:active {
   background-color: gray;
@@ -241,10 +260,12 @@ ul li {
 .home_links .apply_now:hover {
   background-color: #f4f4f4;
   color: black;
+  box-shadow: #02c4ff 0px 0px 10px;
 }
 .home_links .apply_now:active {
   background-color: #f4f4f4;
   color: black;
+  box-shadow: #02c4ff 0px 0px 10px;
 }
 
 /* Home Hero Style Ends Here */
@@ -273,33 +294,25 @@ ul li {
 
 .statements_container h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-size: clamp(1rem, 1.25rem + 1.25vw, 2rem);
+  padding-top: clamp(1rem, 2rem + 1.25vw, 3.5rem);
   font-weight: 600;
   max-width: 100%;
+  background-color: rgb(29, 42, 56);
+  padding: 1.25em;
+  margin: 1em auto;
+  color: white;
+  border-bottom-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
 .statements_container p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: clamp(1rem, 0.75rem + 1.75vw, 1.75rem);
   font-weight: 300;
   max-width: 100%;
   text-align: center;
   line-height: 1.25em;
-}
-
-.mission_heading,
-.programs_heading {
-  color: #bf08bf;
-}
-
-.school_image_container {
-  max-width: 100%;
-  padding-top: 2em;
-}
-
-.school_image {
-  width: 100%;
-  height: auto;
 }
 
 .about {
@@ -323,14 +336,14 @@ ul li {
 
 .about_us h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-size: clamp(1rem, 1.25rem + 1.25vw, 2rem);
   font-weight: 600;
   color: white;
 }
 
 .about_us p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: clamp(1rem, 0.75rem + 1.75vw, 1.75rem);
   font-weight: 300;
   max-width: 100%;
   text-align: center;
@@ -339,6 +352,7 @@ ul li {
 }
 
 /* Events Style Begins Here */
+
 .event {
   display: flex;
   flex-direction: column;
@@ -348,7 +362,7 @@ ul li {
 }
 .event h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-size: clamp(1rem, 1.25rem + 1.25vw, 2rem);
   font-weight: 500;
   color: white;
   padding-top: 2em;
@@ -356,27 +370,12 @@ ul li {
 
 .event p {
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
+  font-size: clamp(1rem, 0.75rem + 1.75vw, 1.75rem);
   font-weight: 300;
   max-width: 100%;
   text-align: center;
   line-height: 1.25em;
   color: white;
-}
-
-.event_image {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1em;
-  max-width: 100%;
-}
-
-.event_image img {
-  width: 100%;
-  height: auto;
-  max-width: 15em;
-  border-radius: 50%;
 }
 
 #home_contact_us {
@@ -387,10 +386,9 @@ ul li {
 
 #home_contact_us h2 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5em;
+  font-size: clamp(1rem, 1.25rem + 1.25vw, 2rem);
   font-weight: 500;
   margin-bottom: 2em;
-  max-width: 50%;
   margin: 1em auto;
 }
 
@@ -407,7 +405,7 @@ input:focus {
 
 form button {
   border-radius: 1.2rem;
-  padding: 1.25em;
+  padding: 1em 2em;
   border: none;
   background-color: rgb(29, 42, 56);
   margin-top: 3em;
@@ -415,10 +413,10 @@ form button {
   color: white;
 }
 
-#home_contact_us .btn {
+#home_contact_us button {
   color: white;
   text-transform: uppercase;
-  font-size: 0.6em;
+  font-size: clamp(1rem, 0.75rem + 1.25vw, 1.25rem);
   font-family: "Roboto", sans-serif;
 }
 
@@ -429,4 +427,66 @@ form button {
 
 .form-example label {
   border-bottom: 1.5px solid black;
+  font-family: "Roboto", sans-serif;
+}
+
+.form-example .size {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(1rem, 0.75rem + 1.25vw, 1.25rem);
+  font-weight: 300;
+}
+
+footer {
+  background-color: rgb(29, 42, 56);
+  color: white;
+  text-align: center;
+  padding: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+
+.social_media ul {
+  gap: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.social_media p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  max-width: 100%;
+}
+
+.social_media li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.social_media a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 2em;
+}
+
+.social_media a:hover {
+  text-decoration: underline;
+}
+
+.social_media a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.social_media a:hover {
+  text-decoration: underline;
 }
