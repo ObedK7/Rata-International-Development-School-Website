@@ -155,13 +155,10 @@ ul li {
 } */
 
 .container {
-  background-image: url(./images/hero_bg.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: blueviolet;
   max-width: 100%;
   margin: 0 auto;
-  border-bottom-left-radius: 2em;
+  border-bottom-left-radius: 5em;
   padding-bottom: 5em;
 }
 
@@ -211,6 +208,7 @@ span {
   outline: none;
   font-weight: bold;
   box-shadow: #02c4ff 0px 0.25px 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .apply_now {
@@ -299,16 +297,19 @@ span {
   font-weight: bold;
   box-shadow: #02c4ff 0px 0.25px 5px;
   background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .apply_now_mid .btn_apply_now a {
   color: #49928f;
   text-decoration: none;
   font-size: 1.2em;
+  padding: 2em 3em;
 }
 
 .apply_now_mid .btn_apply_now:hover {
   background-color: #e0e0e0;
+  color: #333;
 }
 
 #programs {
@@ -318,7 +319,6 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 2em;
 }
 
@@ -358,8 +358,8 @@ span {
   margin: 0 auto;
 }
 
-#progarams .program img {
-  width: 100px;
+#programs .program img {
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -371,13 +371,20 @@ span {
 @media (min-width: 768px) {
   .home_links {
     flex-direction: row;
-    gap: 2em;
+    /* gap: 2em; */
     max-width: 100%;
+  }
+
+  .home_links a {
+    padding: 0.8em 2em;
+    margin: 0 auto;
   }
   .cards {
     flex-direction: row;
     gap: 2em;
     max-width: 100%;
+    padding-top: 5em;
+
   }
 
   .cards h3,
@@ -399,5 +406,18 @@ span {
     flex-direction: row;
     gap: 2em;
     max-width: 100%;
+  }
+  #programs .program {
+    flex: 1;
+  }
+  #programs .program img {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1em;
+  }
+
+  #programs:nth-child(2n){
+    padding: 10em;
   }
 }
