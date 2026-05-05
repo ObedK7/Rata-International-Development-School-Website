@@ -155,12 +155,10 @@ ul li {
 } */
 
 .container {
-  background-color: blueviolet;
-  background-image: url(./images/early_childhood.jpg);
-  background-size: cover;
+  background-image: url(./images/hero_bg.jpg);
   background-position: center;
-  background-position: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width: 100%;
   margin: 0 auto;
   border-bottom-left-radius: 5em;
@@ -409,7 +407,6 @@ span {
     flex-direction: row;
     gap: 2em;
     max-width: 100%;
-    padding-top: 5em;
   }
 
   .cards h3,
@@ -431,18 +428,5 @@ span {
     flex-direction: row;
     gap: 2em;
     max-width: 100%;
-  }
-  #programs .program {
-    flex: 1;
-  }
-  #programs .program img {
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 1em;
-  }
-
-  #programs .program p {
-    text-align: center;
   }
 }
