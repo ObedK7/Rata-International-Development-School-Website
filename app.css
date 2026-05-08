@@ -685,16 +685,12 @@ footer ul li {
 
   .navbar-menu {
     position: static;
-
     width: auto;
-
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.5rem;
-
     padding: 0;
-
     background: transparent;
     backdrop-filter: none;
   }
