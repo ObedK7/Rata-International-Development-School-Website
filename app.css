@@ -132,66 +132,9 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
-
-/* header {
-  border-radius: 2em;
-  background-color: #fff;
-  box-shadow: #02c4ff 0px 0.25px 1.25px;
-  margin: 1em auto;
-}
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2em;
-}
-
-header a {
-  text-decoration: none;
-  padding: 0.5em 1.5em;
-  border-radius: 1em;
-}
-
-li a {
-  font-family: "Roboto", sans-serif;
-  color: #49928f;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out;
-}
-
-header a:hover {
-  background-color: #49928f;
-  color: #fff;
-  box-shadow: #02c4ff 0px 5px 25px;
-}
-
-.contact_us a {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 2em;
-  border: none;
-  outline: none;
-  font-weight: bold;
-  box-shadow: #02c4ff 0px 0.25px 5px;
-  background-color: #02c4ff;
-  transition: background-color 0.3s ease-in-out;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2em;
-}
-
-ul li {
-  margin: 0.8em;
-  font-family: "Roboto", sans-serif;
-} */
 
 .container {
   background-image: url(./images/early_childhood.webp);
@@ -206,13 +149,124 @@ ul li {
   box-shadow: #02c4ff 0px 0px 25px 5px;
 }
 
+/* =========================
+   NAVBAR — MOBILE FIRST
+========================= */
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 1rem 0;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  width: min(90%, 1600px);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+
+.navbar-logo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hamburger Button */
+
+.navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Hamburger Bars */
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Animation */
+
+.navbar-toggle.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.navbar-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggle.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+
+.navbar-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+  background: rgba(77, 124, 155, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom-left-radius: 5rem;
+}
+
+/* Show Menu */
+
+.navbar-menu.active {
+  display: flex;
+}
+
+/* Nav Links */
+
+.navbar-menu li a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.7s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  color: #02c4ff;
+}
+
+/* Hero Section Begins Here */
+
 .home_hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1em;
-  padding: 2em;
+  padding-top: 8rem;
   text-align: center;
 }
 
@@ -255,6 +309,23 @@ span {
   transition: background-color 0.3s ease-in-out;
 }
 
+/* Mobile Tap Highlight */
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus,
+button:focus {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #02c4ff;
+  outline-offset: 3px;
+}
+
 .apply_now {
   background-color: #fff;
 }
@@ -262,7 +333,7 @@ span {
 .home_links a:hover {
   background-color: #e0e0e0;
   box-shadow: #02c4ff 0px 5px 25px 0.5px;
-  transition: background-color #02c4ff 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .home_links .explore_programs {
@@ -445,7 +516,7 @@ span {
 /* Facilities style begins Here */
 
 #facilities {
-  padding: 2em;
+  padding: 1em 2em;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
@@ -559,6 +630,7 @@ form button:hover {
 #home_contact_us button:hover {
   background-color: #e0e0e0;
   color: #333;
+  cursor: pointer;
 }
 
 .form-example label {
@@ -568,58 +640,71 @@ form button:hover {
 /* Contact Us Styles Ends Here */
 
 footer {
-  background-color: #02c4ff;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-  margin-top: 2em;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  border-bottom-left-radius: 2em;
-  border-top-right-radius: 2em;
+  text-align: center;
+  padding: 2em;
+  background-color: #02c4ff;
+  border-bottom-left-radius: 3em;
+  box-shadow: #02c4ff 0px 0px 50px 0px;
 }
 
+footer a,
 footer p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  margin-top: 2em;
-}
-
-footer a {
-  color: #fff;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  color: white;
 }
 
-footer li{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer ul li {
   margin: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.social_media li:nth-last-child(1) {
+  margin-bottom: 3em;
 }
 
-.social_media a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 1em;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-
-.social_media a:hover {
-  text-decoration: underline;
-}
-
-/* Display Screen On Large Devices */
+/* /////// Tablet Display ////// */
 
 @media (min-width: 768px) {
+  .navbar {
+    padding: 1.2rem 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-menu {
+    position: static;
+
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 0;
+
+    background: transparent;
+    backdrop-filter: none;
+  }
+
+  .navbar-menu li a {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #02c4ff;
+  }
+  /* Navbar Style Ends Here */
+
   .home_links {
     flex-direction: row;
-    /* gap: 2em; */
     max-width: 100%;
   }
 
@@ -664,10 +749,18 @@ footer li{
   #home_contact_us form {
     flex: 1;
   }
+
   #home_contact_us h2 {
     margin: 1em auto;
   }
-  .social_media {
-    flex-direction: column;
+
+  footer ul {
+    flex-direction: row;
+  }
+
+  .social_media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
