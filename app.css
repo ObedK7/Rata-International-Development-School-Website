@@ -131,6 +131,11 @@ html {
   font-size: 16px;
 }
 
+body,
+html {
+  scroll-behavior: auto;
+}
+
 body {
   min-height: 100vh;
   width: 100%;
@@ -604,6 +609,8 @@ input:focus {
 
 input::placeholder {
   color: #02c4ff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 form button:hover {
@@ -637,7 +644,7 @@ form button:hover {
   cursor: pointer;
 }
 
-.form-example label {
+form label {
   border-bottom: 1.5px solid black;
 }
 
@@ -660,13 +667,9 @@ footer p {
 }
 
 footer ul li {
-  margin: 1em auto;
+  margin: 1em;
   display: flex;
   flex-direction: column;
-  max-width: fit-content;
-}
-.social_media li:nth-last-child(1) {
-  margin-bottom: 3em;
 }
 
 /* /////// Tablet Display ////// */

@@ -13,4 +13,10 @@ navLinks.forEach((link) => {
     navbarToggle.classList.remove("active");
     navbarMenu.classList.remove("active");
   });
+
+  window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+      window.scrollTo(0, 0);
+    }
+  });
 });
