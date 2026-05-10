@@ -141,19 +141,6 @@ body {
   width: 100%;
 }
 
-@media (hover: hover) {
-  .navbar-menu li a:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-  }
-
-  .home_links a:hover {
-    background-color: #e0e0e0;
-  }
-
-  #home_contact_us button:hover {
-    background-color: #e0e0e0;
-  }
-}
 .container {
   background-image: url(./images/early_childhood.webp);
   background-position: center;
@@ -273,9 +260,9 @@ body {
   transition: all 0.7s ease-in-out;
 }
 
-.navbar-menu li a:hover {
+/* .navbar-menu li a:hover {
   color: #02c4ff;
-}
+} */
 
 /* Hero Section Begins Here */
 
@@ -358,11 +345,11 @@ button:focus-visible {
   background-color: #fff;
 }
 
-.home_links a:hover {
+/* .home_links a:hover {
   background-color: #e0e0e0;
   box-shadow: #02c4ff 0px 5px 25px 0.5px;
   transition: background-color 0.3s ease-in-out;
-}
+} */
 
 .home_links .explore_programs {
   color: #fff;
@@ -371,11 +358,11 @@ button:focus-visible {
   transition: background-color #02c4ff 0.3s ease-in-out;
 }
 
-.home_links .explore_programs:hover {
+/* .home_links .explore_programs:hover {
   background-color: #49928f;
   color: #fff;
   box-shadow: #02c4ff 0px 5px 25px;
-}
+} */
 
 .cards {
   display: flex;
@@ -476,10 +463,10 @@ button:focus-visible {
   padding: 2em 3em;
 }
 
-.apply_now_mid .btn_apply_now:hover {
+/* .apply_now_mid .btn_apply_now:hover {
   background-color: #e0e0e0;
   color: #333;
-}
+} */
 
 /* About Us and Admission Styles Ends Here */
 
@@ -632,9 +619,9 @@ input::placeholder {
   font-size: 1rem;
 }
 
-form button:hover {
+/* form button:hover {
   background-color: #e0e0e0;
-}
+} */
 
 #home_contact_us button {
   color: #49928f;
@@ -657,11 +644,11 @@ form button:hover {
   transition: background-color 0.3s ease-in-out;
 }
 
-#home_contact_us button:hover {
+/* #home_contact_us button:hover {
   background-color: #e0e0e0;
   color: #333;
   cursor: pointer;
-}
+} */
 
 form label {
   border-bottom: 1.5px solid black;
@@ -720,10 +707,10 @@ footer ul li {
     transition: all 0.3s ease-in-out;
   }
 
-  .navbar-menu li a:hover {
+  /* .navbar-menu li a:hover {
     background-color: rgba(255, 255, 255, 0.15);
     color: #02c4ff;
-  }
+  } */
   /* Navbar Style Ends Here */
 
   .home_links {
@@ -785,5 +772,39 @@ footer ul li {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+/* =========================
+   HOVER EFFECTS
+   Desktop / Hover Devices Only
+========================= */
+
+@media (hover: hover) {
+  .navbar-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #02c4ff;
+  }
+
+  .home_links a:hover {
+    background-color: #e0e0e0;
+    box-shadow: #02c4ff 0px 5px 25px 0.5px;
+  }
+
+  .home_links .explore_programs:hover {
+    background-color: #49928f;
+    color: #fff;
+    box-shadow: #02c4ff 0px 5px 25px;
+  }
+
+  .apply_now_mid .btn_apply_now:hover {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+
+  #home_contact_us button:hover {
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
   }
 }
