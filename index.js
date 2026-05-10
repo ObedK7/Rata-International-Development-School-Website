@@ -21,6 +21,14 @@ navLinks.forEach((link) => {
   });
 });
 
+// Remove sticky mobile focus from buttons and links
+
+document.querySelectorAll("a, button").forEach((element) => {
+  element.addEventListener("touchend", () => {
+    element.blur();
+  });
+});
+
 // Disable browser scroll restoration
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
