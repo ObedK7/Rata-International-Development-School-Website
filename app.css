@@ -315,25 +315,31 @@ span {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* Mobile Tap Highlight Begins here */
-
+/* Remove ugly mobile tap highlight */
+a,
 button {
   -webkit-tap-highlight-color: transparent;
-  outline: none;
 }
 
+/* While finger is pressing */
+a:active,
+button:active {
+  transform: scale(0.97);
+  opacity: 0.9;
+}
+
+/* Remove sticky focus */
 a:focus,
 button:focus {
   outline: none;
 }
 
-a:active,
-button:active {
-  border-bottom: 1px solid white;
+/* Accessibility for keyboard users */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #02c4ff;
   outline-offset: 3px;
 }
-
-/* Mobile Tap Highlight ends here */
 
 .apply_now {
   background-color: #fff;
