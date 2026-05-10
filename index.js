@@ -20,3 +20,26 @@ navLinks.forEach((link) => {
     }
   });
 });
+
+// Disable browser scroll restoration
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
+history.scrollRestoration = "manual";
+
+window.onload = () => {
+  window.scrollTo(0, 0);
+};
+
+// Force page to top on load
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 0);
+});
+
+// Extra fix for mobile browsers using cache
+window.addEventListener("pageshow", () => {
+  window.scrollTo(0, 0);
+});
