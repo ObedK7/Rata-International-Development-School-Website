@@ -141,6 +141,19 @@ body {
   width: 100%;
 }
 
+@media (hover: hover) {
+  .navbar-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .home_links a:hover {
+    background-color: #e0e0e0;
+  }
+
+  #home_contact_us button:hover {
+    background-color: #e0e0e0;
+  }
+}
 .container {
   background-image: url(./images/early_childhood.webp);
   background-position: center;
