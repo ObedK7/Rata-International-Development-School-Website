@@ -142,7 +142,7 @@ body {
 }
 
 .container {
-  background-image: url(./images/early_childhood.webp);
+  background-image: url(./images/ece_background.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -278,7 +278,7 @@ body {
 
 .home_hero_content h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: #fff;
   font-weight: 500;
 }
@@ -288,6 +288,14 @@ body {
   font-size: 1.2em;
   color: #fff;
   max-width: 600px;
+}
+
+.home_hero_content .rata-int:nth-of-type(1) {
+  color: white;
+  border-radius: 2em;
+  border: 1 solid gray;
+  background-color: #333;
+  padding: 0.3em 2em;
 }
 
 span {
@@ -437,6 +445,39 @@ button:focus-visible {
   margin: 0 auto;
 }
 
+#management_content {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.2em 0;
+  padding: 1em;
+}
+
+#management {
+  text-align: center;
+  margin: 1em auto;
+}
+
+#management h3 {
+  margin: 1em auto;
+  font-size: 2em;
+}
+
+#management img {
+  max-width: 50%;
+  border-radius: 50%;
+}
+
+#management p {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
 .apply_now_mid {
   display: flex;
   justify-content: center;
@@ -505,7 +546,7 @@ button:focus-visible {
 .program h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #333;
   margin-bottom: 1em;
   text-align: center;
@@ -531,6 +572,28 @@ button:focus-visible {
   border-radius: 1em;
 }
 
+#programs span {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+  border: 0.25 solid black;
+  border-radius: 1rem;
+  padding: 0 1em;
+  font-weight: 400;
+}
+
+#programs .program:nth-of-type(1) span {
+  background-color: rgb(234, 163, 163);
+  color: red;
+}
+#programs .program:nth-of-type(2) span {
+  background-color: rgb(170, 215, 255);
+  color: blue;
+}
+#programs .program:nth-of-type(3) span {
+  background-color: rgb(137, 252, 198);
+  color: green;
+}
 /* Programs style Ends Here */
 
 /* Facilities style begins Here */
@@ -545,7 +608,7 @@ button:focus-visible {
   gap: 2em;
 }
 
-#facilities h4 {
+#facility h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 2em;
@@ -602,7 +665,7 @@ button:focus-visible {
 
 #home_contact_us h2 {
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   max-width: 50%;
   margin: 1em auto;
 }
@@ -686,7 +749,7 @@ footer ul li {
 /* EARLY CHILDHOOD EDUCATION STYLING  */
 
 main .ece_hero {
-  background-image: url(./images/ece_background.jpg);
+  background-image: url(./images/blur-bg.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -695,20 +758,15 @@ main .ece_hero {
   flex-direction: column;
 }
 
-main .learning_section {
-  background-image: url(./images/ece_bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  border-radius: 1em;
-}
-
 .ece_hero .ece {
   color: #fff;
   font-family: "Roboto", sans-serif;
   margin-bottom: 0.5em;
   font-size: 0.75em;
+  border: 1 solid black;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  background-color: rgb(130, 124, 124);
 }
 
 .ece_hero_content {
@@ -783,6 +841,15 @@ main .learning_section {
   margin-top: 2em;
   border-radius: 1em;
   box-shadow: #02c4ff 0px 0.25px 1.25px;
+}
+
+.learning_cards {
+  max-width: 100%;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; */
+  margin: 0 auto;
 }
 
 .learning_section h3 {
@@ -874,15 +941,13 @@ main .learning_section {
   color: #333;
 }
 
-.activity_content p {
-}
-
 /* /////// Tablet Display ////// */
 
 @media (min-width: 768px) {
   html {
-    font-style: 20px;
+    font-size: 16px;
   }
+
   .navbar {
     padding: 1.2rem 0;
   }
@@ -907,6 +972,14 @@ main .learning_section {
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     transition: all 0.3s ease-in-out;
+  }
+
+  .home_hero_content h1 {
+    max-width: 750px;
+  }
+
+  .home_hero_content p {
+    max-width: 500px;
   }
 
   /* .navbar-menu li a:hover {
@@ -943,6 +1016,124 @@ main .learning_section {
   }
   .cards .card {
     flex: 1;
+  }
+
+  #management_content {
+    flex-direction: row;
+  }
+
+  #programs {
+    flex-direction: row;
+    gap: 2em;
+    max-width: 100%;
+  }
+  #facilities {
+    flex-direction: row;
+    gap: 2em;
+    max-width: 100%;
+  }
+
+  #facilities .facility,
+  #programs .program,
+  #home_contact_us form {
+    flex: 1;
+  }
+
+  #home_contact_us h2 {
+    margin: 1em auto;
+  }
+
+  footer ul {
+    flex-direction: row;
+  }
+
+  .social_media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .ece_hero_content a {
+    padding: 0.8em 5em;
+  }
+
+  .activity {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 1em !important;
+  }
+
+  .learning_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .activity_content p {
+    max-width: 600px;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+/* //////// Desktop Display \\\\\\\\\ */
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+
+  .home_hero_content h1 {
+    max-width: 1600px;
+  }
+  .home_hero_content p {
+    max-width: 800px;
+  }
+
+  /* .navbar-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #02c4ff;
+  } */
+  /* Navbar Style Ends Here */
+
+  .home_links {
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .home_links a {
+    padding: 0.8em 2em;
+    margin: 0 auto;
+  }
+  .cards {
+    flex-direction: row;
+    gap: 2em;
+    max-width: 100%;
+  }
+
+  .cards h3,
+  .cards p {
+    text-align: center;
+  }
+
+  .cards img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .cards .card {
+    flex: 1;
+  }
+
+  #management_content {
+    flex-direction: row;
   }
 
   #programs {
