@@ -142,7 +142,7 @@ body {
 }
 
 .container {
-  background-image: url(./images/ece_background.jpg);
+  background-image: url(./images/ece_background\ copy.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -272,7 +272,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  padding-top: 8rem;
+  padding-top: 5rem;
   text-align: center;
 }
 
@@ -281,13 +281,14 @@ body {
   font-size: 2.5rem;
   color: #fff;
   font-weight: 500;
+  max-width: 400px;
 }
 .home_hero_content p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.2em;
   color: #fff;
-  max-width: 600px;
+  max-width: 350px;
 }
 
 .home_hero_content .rata-int:nth-of-type(1) {
@@ -295,7 +296,7 @@ body {
   border-radius: 2em;
   border: 1 solid gray;
   background-color: #333;
-  padding: 0.3em 2em;
+  padding: 0.3em 1em;
 }
 
 span {
@@ -455,6 +456,8 @@ button:focus-visible {
   flex-direction: column;
   margin: 1.2em 0;
   padding: 1em;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 #management {
@@ -749,13 +752,18 @@ footer ul li {
 /* EARLY CHILDHOOD EDUCATION STYLING  */
 
 main .ece_hero {
-  background-image: url(./images/blur-bg.webp);
+  background-color: #49928f;
+  background-image: url(./images/classroom\ copy.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
+  border-bottom-left-radius: 5em;
+  border-bottom-right-radius: 0.25em;
+  padding-bottom: 1em;
+  box-shadow: #02c4ff 0px 0px 25px 5px;
 }
 
 .ece_hero .ece {
@@ -788,13 +796,14 @@ main .ece_hero {
   max-width: 100%;
   text-align: center;
   padding: 0.25em;
+  letter-spacing: 3px;
 }
 
 .ece_hero_content p {
   font-size: 1em;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: #333;
+  color: #fff;
   max-width: 610px;
   text-align: center;
   margin: 1em;
@@ -809,8 +818,12 @@ main .ece_hero {
   color: #02c4ff;
   margin-top: 2.5em;
   letter-spacing: 0.5px;
-  font-weight: 300;
-  background-color: #fff;
+  font-weight: bold;
+}
+
+.ece_hero_content a:hover{
+  background-color: #333;
+  box-shadow: #02c4ff 0px 0px 25px 5px;
 }
 
 .ece_btn {
