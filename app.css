@@ -796,7 +796,7 @@ main .ece_hero {
   max-width: 100%;
   text-align: center;
   padding: 0.25em;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
 }
 
 .ece_hero_content p {
@@ -819,11 +819,6 @@ main .ece_hero {
   margin-top: 2.5em;
   letter-spacing: 0.5px;
   font-weight: bold;
-}
-
-.ece_hero_content a:hover{
-  background-color: #333;
-  box-shadow: #02c4ff 0px 0px 25px 5px;
 }
 
 .ece_btn {
@@ -1220,7 +1215,8 @@ main .ece_hero {
     color: #02c4ff;
   }
 
-  .home_links a:hover {
+  .home_links a:hover,
+  .ece_hero_content a:hover {
     background-color: #e0e0e0;
     box-shadow: #02c4ff 0px 5px 25px 0.5px;
   }
