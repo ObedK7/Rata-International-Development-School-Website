@@ -752,7 +752,6 @@ footer ul li {
 /* EARLY CHILDHOOD EDUCATION STYLING  */
 
 main .ece_hero {
-  background-color: #49928f;
   background-image: url(./images/classroom\ copy.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -796,7 +795,6 @@ main .ece_hero {
   max-width: 100%;
   text-align: center;
   padding: 0.25em;
-  /* letter-spacing: 3px; */
 }
 
 .ece_hero_content p {
@@ -853,10 +851,6 @@ main .ece_hero {
 
 .learning_cards {
   max-width: 100%;
-  /* display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center; */
   margin: 0 auto;
 }
 
