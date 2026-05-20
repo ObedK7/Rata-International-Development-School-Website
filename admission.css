@@ -29,7 +29,6 @@ body {
 }
 
 .container-form header {
-  text-decoration: underline;
   font-size: 1.5rem;
   color: #333;
   font-weight: 500;
@@ -39,6 +38,20 @@ body {
 
 .container-form .form {
   margin-top: 2em;
+}
+
+.family-name h3 {
+  font-weight: 500;
+  font-style: 1em;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.mother-data h3 {
+  font-weight: 500;
+  font-style: 1em;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .form .input-box {
@@ -115,6 +128,10 @@ body {
   cursor: pointer;
 }
 
+option{
+    width: 100%;
+}
+
 .form button {
   height: 55px;
   width: 100%;
@@ -133,7 +150,7 @@ body {
   background-color: rgb(88, 56, 250);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .parent-option {
     display: flex;
     flex-direction: column;
