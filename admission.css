@@ -121,6 +121,7 @@ body {
   border: none;
   color: #707070;
   font-size: 1em;
+  padding: auto 0;
 }
 
 .form :where(.parent input, .parent label),
@@ -128,8 +129,8 @@ body {
   cursor: pointer;
 }
 
-option{
-    width: 100%;
+option {
+  width: 100%;
 }
 
 .form button {
