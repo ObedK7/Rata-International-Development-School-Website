@@ -54,7 +54,7 @@ body {
   color: #333;
 }
 
-.form .input-box input {
+.form :where(.input-box input, .select-box) {
   position: relative;
   height: 50px;
   width: 100%;
@@ -97,6 +97,23 @@ body {
   color: #707070;
 }
 
+.addres :where(input, .select-box) {
+  margin-bottom: 20px;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1em;
+}
+
+select option {
+  border-radius: 6px;
+}
+
 .form :where(.parent input, .parent label),
 .form :where(.gender input, .gender label) {
   cursor: pointer;
@@ -120,7 +137,7 @@ body {
   background-color: rgb(88, 56, 250);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .parent-option {
     display: flex;
     flex-direction: column;
