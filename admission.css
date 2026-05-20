@@ -71,6 +71,8 @@ body {
 .parent-box h3 {
   margin: 1em auto;
   color: #333;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .form :where(.parent-option, .parent),
@@ -85,9 +87,37 @@ body {
   column-gap: 5px;
 }
 
+.gender input,
+.parent input {
+  accent-color: rgb(130, 106, 251);
+}
+
+.gender label,
+.parent label {
+  color: #707070;
+}
+
 .form :where(.parent input, .parent label),
 .form :where(.gender input, .gender label) {
   cursor: pointer;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: rgb(130, 106, 251);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form button:hover {
+  background-color: rgb(88, 56, 250);
 }
 
 @media (max-width: 600px) {
