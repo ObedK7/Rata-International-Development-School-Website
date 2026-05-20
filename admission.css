@@ -177,19 +177,6 @@ option {
     align-items: flex-start;
   }
 
-  .form :where(.input-box input, .select-box) {
-    position: relative;
-    height: 50px;
-    width: 100%;
-    outline: none;
-    font-size: 1rem;
-    margin-top: 8px;
-    color: #707070;
-    border: 1px solid #ddd;
-    padding: 0 15px;
-    border-radius: 6px;
-  }
-
   .form .gender,
   .form .parent {
     column-gap: 5px;
