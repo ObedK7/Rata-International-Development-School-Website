@@ -90,7 +90,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .parent-option {
     display: flex;
     flex-direction: column;
