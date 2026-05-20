@@ -110,10 +110,6 @@ body {
   font-size: 1em;
 }
 
-select option {
-  border-radius: 6px;
-}
-
 .form :where(.parent input, .parent label),
 .form :where(.gender input, .gender label) {
   cursor: pointer;
@@ -137,7 +133,7 @@ select option {
   background-color: rgb(88, 56, 250);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .parent-option {
     display: flex;
     flex-direction: column;
@@ -155,6 +151,19 @@ select option {
   .form :where(.parent-option, .parent) {
     row-gap: 25px;
     align-items: flex-start;
+  }
+
+  .form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+    color: #707070;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+    border-radius: 6px;
   }
 
   .form .gender,
