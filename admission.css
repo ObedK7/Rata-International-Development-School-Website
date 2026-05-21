@@ -22,6 +22,11 @@ body {
   flex-direction: column;
 }
 
+body,
+html {
+  scroll-behavior: smooth;
+}
+
 .container-form {
   position: relative;
   max-width: 700px;
@@ -131,7 +136,8 @@ input[type="date"] {
 }
 
 .form :where(.parent input, .parent label),
-.form :where(.gender input, .gender label) {
+.form :where(.gender input, .gender label),
+.form :where(.select-box select) {
   cursor: pointer;
 }
 

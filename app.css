@@ -133,7 +133,7 @@ html {
 
 body,
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 body {
