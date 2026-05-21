@@ -30,7 +30,7 @@
                 <input type="text" placeholder="Enter place of birth" required>
             </div>
             <div class="input-box">
-                <label for="date">Date of Birth</label>
+                <label>Date of Birth</label>
                 <input type="date" id="date" name="date" placeholder="Date of birth" required>
 
                 <div class="input-box">
@@ -64,20 +64,20 @@
             <div class="parent-box">
                 <h3>Child Lives With</h3>
                 <div class="parent-option">
-                    <div class="parent">
-                        <input type="radio" id="check-father" name="radio">
+                    <div class="radio-option">
+                        <input type="radio" id="check-father" class="parent-toggle" name="radio">
                         <label for="check-father">Father</label>
                     </div>
-                    <div class="parent">
-                        <input type="radio" id="check-mother" name="radio">
+                    <div class="radio-option">
+                        <input type="radio" id="check-mother" class="parent-toggle" name="radio">
                         <label for="check-mother">Mother</label>
                     </div>
-                    <div class="parent">
-                        <input type="radio" id="check-both-parent's" name="radio">
-                        <label for="check-both-parent's">Both</label>
+                    <div class="radio-option">
+                        <input type="radio" id="check-both-parents" class="parent-toggle" name="radio">
+                        <label for="check-both-parents">Both</label>
                     </div>
-                    <div class="parent">
-                        <input type="radio" id="check-guardian" name="radio">
+                    <div class="radio-option">
+                        <input type="radio" id="check-guardian" class="parent-toggle" name="radio">
                         <label for="check-guardian">Guardian</label>
                     </div>
                 </div>
@@ -94,10 +94,6 @@
                         <input type="radio" id="check-female" name="gender">
                         <label for="check-female">Female</label>
                     </div>
-                    <div class="gender">
-                        <input type="radio" id="check-preferred" name="gender">
-                        <label for="check-preferred">Prefer not to say</label>
-                    </div>
                 </div>
             </div>
             <div class="family-name">
@@ -106,77 +102,63 @@
                         <h3>Mother's Details</h3>
                         <label>Mother's Full Name</label>
                         <input type="text" placeholder="Enter mother's full name" required>
-                    </div>
-                    <div class="input-box">
-                        <label>Address</label>
-                        <input type="text" placeholder="Enter address" required>
-                    </div>
-                    <div class="input-box">
-                        <label>Contact</label>
-                        <input type="text" placeholder="Enter contact" required>
-                    </div>
-                    <div class="father-data">
-                        <h3>Father's Details</h3>
-                        <div class="input-box">
-                            <label>Father's Full Name</label>
-                            <input type="text" placeholder="Enter father's full name" required>
-                        </div>
-                        <div class="input-box">
-                            <label>Address</label>
+                        <div class="input-box column">
                             <input type="text" placeholder="Enter address" required>
-                        </div>
-                        <div class="input-box">
-                            <label>Contact</label>
                             <input type="text" placeholder="Enter contact" required>
                         </div>
-                        <div class="guardian-data">
-                            <h3>Guardian's Details</h3>
-                            <div class="input-box">
-                                <label>Guardians Full Name</label>
-                                <input type="text" placeholder="Enter guardians full name" required>
-                            </div>
-                            <div class="input-box">
-                                <label>Address</label>
-                                <input type="text" placeholder="Enter address" required>
-                            </div>
-                            <div class="input-box">
-                                <label>Contact</label>
-                                <input type="text" placeholder="Enter contact" required>
-                            </div>
-                            <div class="both-data">
-                                <h3>Both Parent's Details</h3>
-                                <div class="input-box">
-                                    <label>Mother's Full Name</label>
-                                    <input type="text" placeholder="Enter mother's full name" required>
-                                </div>
-                                <div class="input-box">
-                                    <label>Address</label>
-                                    <input type="text" placeholder="Enter address" required>
-                                </div>
-                                <div class="input-box">
-                                    <label>Contact</label>
-                                    <input type="text" placeholder="Enter Contact" required>
-                                </div>
-                                <div class="input-box">
-                                    <label>Father's Full Name</label>
-                                    <input type="text" placeholder="Enter father's full name" required>
-                                </div>
-                                <div class="input-box">
-                                    <label>Address</label>
-                                    <input type="text" placeholder="Enter address" required>
-                                </div>
-                                <div class="input-box">
-                                    <label>Contact</label>
-                                    <input type="text" placeholder="Enter contact" required>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+
+                <div class="father-data">
+                    <div class="input-box">
+                        <h3>Father's Details</h3>
+                        <label>Father's Full Name</label>
+                        <input type="text" placeholder="Enter mother's full name" required>
+                        <div class="input-box column">
+                            <input type="text" placeholder="Enter address" required>
+                            <input type="text" placeholder="Enter contact" required>
                         </div>
-                        <button>Submit</button>
+                    </div>
+                </div>
+
+                <div class="guardian-data">
+                    <div class="input-box">
+                        <h3>Guardian's Details</h3>
+                        <label>Guardian's Full Name</label>
+                        <input type="text" placeholder="Enter mother's full name" required>
+                        <div class="input-box column">
+                            <input type="text" placeholder="Enter address" required>
+                            <input type="text" placeholder="Enter contact" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="both-data">
+                    <div class="input-box">
+                        <h3>Both Parent's Details</h3>
+                        <label>Mother's Full Name</label>
+                        <input type="text" placeholder="Enter mother's full name" required>
+                    </div>
+                    <div class="input-box column">
+                        <input type="text" placeholder="Enter address" required>
+                        <input type="text" placeholder="Enter Contact" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Father's Full Name</label>
+                        <input type="text" placeholder="Enter father's full name" required>
+                    </div>
+                    <div class="input-box column">
+                        <input type="text" placeholder="Enter address" required>
+                        <input type="text" placeholder="Enter contact" required>
                     </div>
                 </div>
             </div>
+            <button>Submit</button>
+            </div>
         </form>
     </section>
+    <script src="./index.js"></script>
 </body>
 
 </html>
