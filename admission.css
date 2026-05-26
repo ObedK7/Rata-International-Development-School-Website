@@ -154,8 +154,29 @@ input[type="date"] {
   cursor: pointer;
   transition: all 0.2s ease;
 }
+.back-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30px;
+  width: 100%;
+  background-color: rgb(130, 106, 251);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 
-.form button:hover {
+.back-btn a {
+  text-decoration: none;
+}
+
+.form button:hover,
+.back-btn button:hover {
   background-color: rgb(88, 56, 250);
 }
 
