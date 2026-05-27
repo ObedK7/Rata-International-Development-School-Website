@@ -291,7 +291,7 @@ body {
   max-width: 350px;
 }
 
-.home_hero_content .rata-int:nth-of-type(1) {
+.home_hero_content .sch-name:nth-of-type(1) {
   color: white;
   border-radius: 2em;
   border: 1 solid gray;
@@ -438,6 +438,17 @@ button:focus-visible {
   text-align: center;
   max-width: 100%;
   margin: 0 auto;
+}
+
+#programs .program:nth-of-type(1) {
+  box-shadow: rgb(255, 0, 0) 1.25px 1.25px 1.25px;
+}
+
+#programs .program:nth-of-type(2) {
+  box-shadow: rgb(0, 133, 249) 1.25px 1.25px 1.25px;
+}
+#programs .program:nth-of-type(3) {
+  box-shadow: rgb(4, 255, 4) 1.25px 1.25px 1.25px;
 }
 
 #management_content {
@@ -619,8 +630,8 @@ button:focus-visible {
   padding: 1.5em;
   border-radius: 1em;
   box-shadow: #02c4ff 0px 0.25px 1.25px;
-  margin-bottom: 2em;
 }
+
 .facility h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -663,7 +674,8 @@ Contact Us Styles Begins Here
 
 #home_contact_us {
   text-align: center;
-  margin: 5em auto;
+  margin: 1em auto;
+  margin-bottom: 5em;
 }
 
 #home_contact_us h2 {
@@ -704,7 +716,7 @@ input::placeholder {
   border-radius: 2em;
   border: none;
   outline: none;
-  margin-top: 5em;
+  margin-top: 2em;
   font-weight: bold;
   box-shadow: #02c4ff 0px 0.25px 5px;
   background-color: #fff;
