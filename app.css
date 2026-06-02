@@ -513,11 +513,6 @@ button:focus-visible {
   padding: 2em 3em;
 }
 
-/* .apply_now_mid .btn_apply_now:hover {
-  background-color: #e0e0e0;
-  color: #333;
-} */
-
 /* About Us and Admission Styles Ends Here */
 
 /* Programs style Begins Here */
@@ -818,7 +813,8 @@ footer ul li {
 }
 
 a,
-.ece_btn {
+.ece_btn,
+.ece_admission_btn {
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -829,7 +825,8 @@ a,
   border-radius: 2em;
 }
 
-.learning_section {
+.learning_section,
+.ece_admission_section {
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -839,7 +836,8 @@ a,
   font-family: "Roboto", sans-serif;
 }
 
-.learning_card {
+.learning_card,
+.ece_requirement {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -885,6 +883,111 @@ a,
   width: 10%;
   height: auto;
   border-radius: 1em;
+}
+
+.activity,
+.ece_facility {
+  padding: 1.5em;
+  border-radius: 1em;
+}
+
+.activity_content,
+.ece_facility_content {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin-top: 2em;
+}
+
+.activities_section,
+.ece_facilities_section {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  text-align: center;
+  background-color: rgb(235, 173, 216);
+}
+
+.ece_admission_section {
+  margin-bottom: 3em;
+}
+
+.activities_section h2,
+.ece_facilities_section h2,
+.ece_admission_section h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  margin: 1em auto;
+}
+
+.activities_section p,
+.ece_facilities_section p,
+.ece_requirement p,
+.ece_admission_section p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.25em;
+  max-width: 100%;
+}
+
+.activity,
+.ece_facility {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.activity_image img,
+.ece_facility_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.activity_content,
+.ece_facility_content {
+  width: 100%;
+}
+
+.activity_content h3,
+.ece_facility_content h3,
+.ece_requirement h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 0.8em;
+}
+
+.ece_admission_requirements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+.ece_admission_requirements .ece_requirement:nth-of-type(1) {
+  box-shadow: rgb(255, 0, 0) 1.25px 1.25px 1.25px;
+}
+
+.ece_admission_requirements .ece_requirement:nth-of-type(2) {
+  box-shadow: rgb(0, 133, 249) 1.25px 1.25px 1.25px;
+}
+.ece_admission_requirements .ece_requirement:nth-of-type(3) {
+  box-shadow: rgb(4, 255, 4) 1.25px 1.25px 1.25px;
+}
+
+.ece_admission_btn {
+  font-family: "Roboto", sans-serif;
+  padding: 0.8em 1.5em;
+  color: #49928f;
+  text-decoration: none;
+  border-radius: 2em;
+  border: 1px solid #666;
+  outline: none;
+  font-weight: bold;
 }
 
 /* /////// Tablet Display ////// */
@@ -1002,6 +1105,15 @@ a,
     flex-direction: row;
     gap: 2em;
   }
+  .ece_admission_requirements {
+    gap: 2em;
+    flex-direction: row;
+    margin-bottom: 5em;
+  }
+
+  .ece_admission_section {
+    margin-bottom: 3em;
+  }
 }
 
 /* //////// Desktop Display \\\\\\\\\ */
@@ -1091,6 +1203,53 @@ a,
     display: flex;
     flex-direction: row;
     gap: 2em;
+  }
+
+  .activity_image img,
+  .ece_facility_image img {
+    width: 80%;
+    height: 100%;
+    border-radius: 3em;
+    padding: 2em;
+  }
+
+  .activity,
+  .ece_facility {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activity.reverse,
+  .ece_facility.reverse {
+    flex-direction: row;
+  }
+
+  .activity_content,
+  .ece_facility_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .learning_heading p,
+  .ece_facilities_section p,
+  .activities_section p,
+  .ece_admission_section p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .ece_admission_requirements {
+    gap: 2em;
+    flex-direction: row;
+    margin-bottom: 5em;
+  }
+
+  .ece_admission_section {
+    margin-bottom: 3em;
   }
 }
 
