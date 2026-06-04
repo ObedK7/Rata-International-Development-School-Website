@@ -142,7 +142,7 @@ body {
 }
 
 .container {
-  background-image: url(./images/ece_background\ copy.jpg);
+  background-image: url(./images/ece_background\ copy.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -749,7 +749,7 @@ footer ul li {
 /* EARLY CHILDHOOD EDUCATION STYLING  */
 
 .container-ece {
-  background-image: url(./images/classroom\ copy.jpg);
+  background-image: url(./images/classroom\ copy.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -826,7 +826,7 @@ a,
 }
 
 .learning_section,
-.ece_admission_section {
+#ece_admission_section {
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -853,6 +853,17 @@ a,
 .learning_cards {
   max-width: 100%;
   margin: 0 auto;
+}
+
+.learning_cards .learning_card:nth-of-type(1) {
+  box-shadow: rgb(255, 0, 0) 1.25px 1.25px 1.25px;
+}
+
+.learning_cards .learning_card:nth-of-type(2) {
+  box-shadow: rgb(0, 133, 249) 1.25px 1.25px 1.25px;
+}
+.learning_cards .learning_card:nth-of-type(3) {
+  box-shadow: rgb(4, 255, 4) 1.25px 1.25px 1.25px;
 }
 
 .learning_section h3 {
@@ -907,13 +918,13 @@ a,
   background-color: rgb(235, 173, 216);
 }
 
-.ece_admission_section {
+#ece_admission_section {
   margin-bottom: 3em;
 }
 
 .activities_section h2,
 .ece_facilities_section h2,
-.ece_admission_section h2 {
+#ece_admission_section h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 1.5em;
@@ -924,7 +935,7 @@ a,
 .activities_section p,
 .ece_facilities_section p,
 .ece_requirement p,
-.ece_admission_section p {
+#ece_admission_section p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.2em;
@@ -1111,7 +1122,7 @@ a,
     margin-bottom: 5em;
   }
 
-  .ece_admission_section {
+  #ece_admission_section {
     margin-bottom: 3em;
   }
 }
@@ -1237,7 +1248,7 @@ a,
   .learning_heading p,
   .ece_facilities_section p,
   .activities_section p,
-  .ece_admission_section p {
+  #ece_admission_section p {
     max-width: 800px;
     margin: 0 auto;
   }
@@ -1248,7 +1259,7 @@ a,
     margin-bottom: 5em;
   }
 
-  .ece_admission_section {
+  #ece_admission_section {
     margin-bottom: 3em;
   }
 }

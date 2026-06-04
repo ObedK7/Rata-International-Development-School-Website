@@ -141,7 +141,7 @@ input[type="date"] {
   cursor: pointer;
 }
 
-.form button {
+.form .button input {
   height: 55px;
   width: 100%;
   margin-top: 30px;
@@ -175,7 +175,7 @@ input[type="date"] {
   text-decoration: none;
 }
 
-.form button:hover,
+.form .button input:hover,
 .back-btn button:hover {
   background-color: rgb(88, 56, 250);
 }
