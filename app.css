@@ -271,7 +271,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1em;
+  gap: 1rem;
   padding-top: 5rem;
   text-align: center;
 }
@@ -286,9 +286,10 @@ body {
 .home_hero_content p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #fff;
   max-width: 350px;
+  line-height: 1em;
 }
 
 .home_hero_content .sch-name:nth-of-type(1) {
@@ -309,8 +310,8 @@ span {
 .home_links {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
-  margin-top: 2em;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 .home_links a {
   font-family: "Roboto", sans-serif;
@@ -371,10 +372,10 @@ button:focus-visible {
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  padding: 2em;
-  margin-top: 3em;
-  text-align: center;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: left;
 }
 
 .card {
@@ -387,15 +388,15 @@ button:focus-visible {
 .cards h3 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.25rem;
   color: #333;
-  margin: 1em auto;
+  margin: 1rem auto;
 }
 
 .cards p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #666;
   line-height: 1.25em;
   max-width: 100%;
@@ -408,47 +409,73 @@ button:focus-visible {
   border-radius: 1em;
 }
 
+.cards .card:nth-of-type(1) {
+  box-shadow: rgb(255, 0, 0) 1.25px 1.25px 1.25px;
+}
+
+.cards .card:nth-of-type(2) {
+  box-shadow: rgb(0, 133, 249) 1.25px 1.25px 1.25px;
+}
+.cards .card:nth-of-type(3) {
+  box-shadow: rgb(4, 255, 4) 1.25px 1.25px 1.25px;
+}
+
 /* About Us and Admission Styles Begins Here */
 
-#about_us,
-#admission {
-  padding: 2em;
+.about_us,
+.admission {
+  padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
 }
 
-#about_us h2,
-#admission h3,
-#home_contact_us h2 {
+.about_us h2,
+.admission h3,
+.home_contact_us h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 1.75rem;
   color: #333;
-  margin-bottom: 1em;
-  text-align: center;
+  margin-bottom: 1rem;
+  text-align: left;
   max-width: 800px;
 }
 
-#about_us p,
-#admission p {
+.about_us p,
+.admission p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #666;
   line-height: 1.25em;
-  text-align: center;
+  text-align: left;
   max-width: 100%;
   margin: 0 auto;
 }
 
-#programs .program:nth-of-type(1) {
+/* ========= Programs Section ========= */
+
+#home_programs .program:nth-of-type(1) {
   box-shadow: rgb(255, 0, 0) 1.25px 1.25px 1.25px;
 }
 
-#programs .program:nth-of-type(2) {
+#home_programs .program:nth-of-type(2) {
   box-shadow: rgb(0, 133, 249) 1.25px 1.25px 1.25px;
 }
-#programs .program:nth-of-type(3) {
+#home_programs .program:nth-of-type(3) {
+  box-shadow: rgb(4, 255, 4) 1.25px 1.25px 1.25px;
+}
+
+/* ========= Facilities Section ========= */
+
+#home_facilities .facility:nth-of-type(1) {
+  box-shadow: rgb(255, 0, 0) 1.25px 1.25px 1.25px;
+}
+
+#home_facilities .facility:nth-of-type(2) {
+  box-shadow: rgb(0, 133, 249) 1.25px 1.25px 1.25px;
+}
+#home_facilities .facility:nth-of-type(3) {
   box-shadow: rgb(4, 255, 4) 1.25px 1.25px 1.25px;
 }
 
@@ -460,7 +487,7 @@ button:focus-visible {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 1.2em 0;
+  margin: 1.2rem 0;
   padding: 1em;
   border-bottom-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -473,7 +500,7 @@ button:focus-visible {
 
 #management h3 {
   margin: 1em auto;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 #management img {
@@ -482,15 +509,15 @@ button:focus-visible {
 }
 
 #management p {
-  font-size: 1em;
+  font-size: 1.25rem;
   font-weight: 400;
-  margin-bottom: 1em;
+  margin-bottom: 1.25rem;
 }
 
 .apply_now_mid {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 2.5rem;
 }
 
 .apply_now_mid .btn_apply_now {
@@ -518,57 +545,57 @@ button:focus-visible {
 
 /* Programs style Begins Here */
 
-#programs {
-  padding: 2em;
+.programs {
+  padding: 2rem;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2em;
+  align-items: center;
+  gap: 2rem;
 }
 
-#programs h3 {
+/* .programs h3 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 2em;
-  color: #333;
-  margin-bottom: 1em;
-  text-align: center;
-}
+  font-size: 2rem;
+  color: red;
+  margin-bottom: 1rem;
+} */
 
-#programs a {
+.programs a {
   text-decoration: none;
 }
 
 .program {
   background-color: #f5f5f5;
-  padding: 1.5em;
+  padding: 1.5rem;
   border-radius: 1em;
   box-shadow: #02c4ff 0px 0.25px 1.25px;
 }
 .program h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #333;
-  margin-bottom: 1em;
-  text-align: center;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .program p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #666;
   line-height: 1.25em;
-  text-align: center;
+  text-align: left;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 1.25em;
+  padding-top: 1.25rem;
 }
 
-#programs .program img {
+.programs .program img {
   width: 100%;
   height: auto;
   display: block;
@@ -576,25 +603,25 @@ button:focus-visible {
   border-radius: 1em;
 }
 
-#programs span {
+.programs span {
   margin: 0 auto;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   border: 0.25 solid black;
   border-radius: 1rem;
   padding: 0 1em;
   font-weight: 400;
 }
 
-#programs .program:nth-of-type(1) span {
+.programs .program:nth-of-type(1) span {
   background-color: rgb(234, 163, 163);
   color: red;
 }
-#programs .program:nth-of-type(2) span {
+.programs .program:nth-of-type(2) span {
   background-color: rgb(170, 215, 255);
   color: blue;
 }
-#programs .program:nth-of-type(3) span {
+.programs .program:nth-of-type(3) span {
   background-color: rgb(137, 252, 198);
   color: green;
 }
@@ -602,28 +629,28 @@ button:focus-visible {
 
 /* Facilities style begins Here */
 
-#facilities {
+.facilities {
   padding: 1em 2em;
   max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2em;
+  gap: 2rem;
 }
 
-#facility h4 {
+/* .facility h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 2rem;
   color: #333;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   text-align: center;
-}
+} */
 
 .facility {
   background-color: #f5f5f5;
-  padding: 1.5em;
+  padding: 1.5rem;
   border-radius: 1em;
   box-shadow: #02c4ff 0px 0.25px 1.25px;
 }
@@ -631,25 +658,25 @@ button:focus-visible {
 .facility h4 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.25rem;
   color: #333;
-  margin-bottom: 1em;
-  text-align: center;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .facility p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #666;
   line-height: 1.25em;
-  text-align: center;
+  text-align: left;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: 1.25em;
+  padding-top: 1.25rem;
 }
 
-#facilities .facility img {
+.facilities .facility img {
   width: 100%;
   height: auto;
   display: block;
@@ -668,17 +695,18 @@ Facilities style Ends Here
 Contact Us Styles Begins Here
 ===============================  */
 
-#home_contact_us {
+.home_contact_us {
   text-align: center;
   margin: 1em auto;
-  margin-bottom: 5em;
+  margin-bottom: 5rem;
 }
 
-#home_contact_us h2 {
+.home_contact_us h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   max-width: 50%;
   margin: 1em auto;
+  text-align: center;
 }
 
 input {
@@ -698,21 +726,21 @@ input::placeholder {
   font-size: 1rem;
 }
 
-#home_contact_us button {
+.home_contact_us button {
   color: #49928f;
   font-family: "Roboto", sans-serif;
 }
 
-#home_contact_us button {
+.home_contact_us button {
   font-family: "Roboto", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   padding: 0.8em 1.5em;
   color: #49928f;
   text-decoration: none;
   border-radius: 2em;
   border: none;
   outline: none;
-  margin-top: 2em;
+  margin-top: 2rem;
   font-weight: bold;
   box-shadow: #02c4ff 0px 0.25px 5px;
   background-color: #fff;
@@ -729,7 +757,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 2em;
+  padding: 2rem;
   background-color: #02c4ff;
   border-bottom-left-radius: 3em;
   box-shadow: #02c4ff 0px 0px 50px 0px;
@@ -756,7 +784,7 @@ footer ul li {
   background-size: cover;
   border-bottom-left-radius: 5em;
   border-bottom-right-radius: 0.25em;
-  padding-bottom: 5em;
+  padding-bottom: 5rem;
   margin: 0 auto;
   max-width: 100%;
   box-shadow: #02c4ff 0px 0px 25px 5px;
@@ -765,8 +793,8 @@ footer ul li {
 .ece_hero .ece {
   color: #fff;
   font-family: "Roboto", sans-serif;
-  margin-bottom: 0.5em;
-  font-size: 0.75em;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
   border: 1 solid black;
   border-radius: 2em;
   padding: 0.5em 1em;
@@ -774,7 +802,7 @@ footer ul li {
 }
 
 .ece_hero_content {
-  margin-top: 5em;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -784,7 +812,7 @@ footer ul li {
 
 .ece_hero_content h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 500;
   color: #fff;
   max-width: 100%;
@@ -792,11 +820,11 @@ footer ul li {
 }
 
 .ece_hero_content p {
-  font-size: 1em;
+  font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #fff;
-  max-width: 610px;
+  max-width: 700px;
   text-align: center;
   margin: 1em;
   line-height: 1.25em;
@@ -806,9 +834,8 @@ footer ul li {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   padding: 0.8em 2.5em;
-  margin-top: 1em;
   color: #fff;
-  margin-top: 2.5em;
+  margin-top: 2.5rem;
   letter-spacing: 0.5px;
   font-weight: bold;
 }
@@ -827,12 +854,12 @@ a,
 }
 
 .learning_section,
-#ece_admission_section {
+.ece_admission_section {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
   padding: 2em;
-  margin-top: 3em;
+  margin-top: 3rem;
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -846,7 +873,7 @@ a,
   background-color: #f5f5f5;
   font-family: "Roboto", sans-serif;
   padding: 2em;
-  margin-top: 2em;
+  margin-top: 2rem;
   border-radius: 1em;
   box-shadow: #02c4ff 0px 0.25px 1.25px;
 }
@@ -870,25 +897,28 @@ a,
 .learning_section h3 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.25rem;
   color: #333;
   margin: 1em auto;
 }
+
 .learning_section h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #333;
   margin: 1em auto;
+  text-align: left;
 }
 
 .learning_section p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #333;
   line-height: 1.25em;
   max-width: 100%;
+  text-align: left;
 }
 
 .learning_section img {
@@ -907,7 +937,7 @@ a,
 .ece_facility_content {
   font-family: "Roboto", sans-serif;
   color: #333;
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 .activities_section,
@@ -919,30 +949,32 @@ a,
   background-color: rgb(235, 173, 216);
 }
 
-#ece_admission_section {
+.ece_admission_section {
   margin-bottom: 3em;
 }
 
 .activities_section h2,
 .ece_facilities_section h2,
-#ece_admission_section h2 {
+.ece_admission_section h2 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #333;
   margin: 1em auto;
+  text-align: left;
 }
 
 .activities_section p,
 .ece_facilities_section p,
 .ece_requirement p,
-#ece_admission_section p {
+.ece_admission_section p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: #333;
   line-height: 1.25em;
   max-width: 100%;
+  text-align: left;
 }
 
 .activity,
@@ -951,6 +983,7 @@ a,
   justify-self: center;
   flex-direction: column;
   align-items: center;
+  text-align: left;
 }
 
 .activity_image img,
@@ -969,15 +1002,17 @@ a,
 .ece_facility_content h3,
 .ece_requirement h3 {
   font-family: "Roboto", sans-serif;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.8em;
+  text-align: left;
 }
 
 .ece_admission_requirements {
   display: flex;
   flex-direction: column;
   margin-bottom: 3em;
+  text-align: left;
 }
 
 .ece_admission_requirements .ece_requirement:nth-of-type(1) {
@@ -1005,10 +1040,6 @@ a,
 /* /////// Tablet Display ////// */
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-
   .navbar {
     padding: 1.2rem 0;
   }
@@ -1060,7 +1091,7 @@ a,
 
   .cards h3,
   .cards p {
-    text-align: center;
+    text-align: left;
   }
 
   .cards img,
@@ -1068,8 +1099,9 @@ a,
     width: 30%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 0;
   }
+
   .cards .card,
   .learning_cards .learning_card {
     flex: 1;
@@ -1079,24 +1111,49 @@ a,
     flex-direction: row;
   }
 
-  #programs {
-    flex-direction: row;
-    gap: 2em;
-    max-width: 100%;
+  .about_us h2,
+  .admission h3,
+  .home_contact_us h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+    max-width: 800px;
   }
-  #facilities {
+
+  .about_us p,
+  .admission p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.25em;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .programs {
     flex-direction: row;
-    gap: 2em;
+    gap: 2rem;
     max-width: 100%;
   }
 
-  #facilities .facility,
-  #programs .program,
-  #home_contact_us form {
+  .facilities {
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 100%;
+  }
+
+  .facility,
+  .program,
+  .home_contact_us form {
     flex: 1;
   }
 
-  #home_contact_us h2 {
+  .home_contact_us h2 {
     margin: 1em auto;
   }
 
@@ -1119,10 +1176,243 @@ a,
     flex-direction: row;
     gap: 2em;
   }
+
+  .learning_card h3 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .learning_card p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .learning_heading h2,
+  .activities_heading h2,
+  .ece_facilities_heading h2,
+  .ece_admission_content h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .learning_heading p,
+  .activities_heading p,
+  .ece_facilities_heading p,
+  .ece_admission_content p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
   .ece_admission_requirements {
     gap: 2em;
     flex-direction: row;
     margin-bottom: 5em;
+  }
+
+  .ece_admission_section {
+    margin-bottom: 3em;
+  }
+
+  .ece_requirement h3 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .ece_requirement p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+/* //////// Desktop Display \\\\\\\\\ */
+
+@media (min-width: 1024px) {
+  .home_hero_content h1 {
+    max-width: 1600px;
+    font-size: 2.5rem;
+  }
+
+  .home_hero_content p {
+    max-width: 800px;
+    font-size: 1.5rem;
+  }
+
+  .home_links {
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .home_links a {
+    padding: 0.8em 2em;
+    margin: 0 auto;
+  }
+
+  .cards,
+  .learning_cards {
+    flex-direction: row;
+    gap: 2em;
+    max-width: 100%;
+  }
+
+  .cards h3,
+  .cards p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .about_us h2,
+  .admission h3,
+  .home_contact_us h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .about_us p,
+  .admission p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .cards img,
+  .learning_cards img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .cards .card {
+    flex: 1;
+  }
+
+  #management_content {
+    flex-direction: row;
+  }
+
+  .programs {
+    flex-direction: row;
+    gap: 2em;
+    max-width: 100%;
+  }
+
+  .programs h4,
+  .facilities h4 {
+    text-align: center;
+  }
+
+  .facilities {
+    flex-direction: row;
+    gap: 2em;
+    max-width: 100%;
+  }
+
+  .facility,
+  .program,
+  .home_contact_us form {
+    flex: 1;
+  }
+
+  .home_contact_us h2 {
+    margin: 1em auto;
+  }
+
+  footer ul {
+    flex-direction: row;
+  }
+
+  .social_media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .ece_hero_content a {
+    padding: 0.8em 5em;
+  }
+
+  .ece_hero_content p {
+    max-width: 700px;
+  }
+
+  .learning_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  .activity_image img,
+  .ece_facility_image img {
+    width: 80%;
+    height: 100%;
+    border-radius: 3em;
+    padding: 2em;
+  }
+
+  .activity,
+  .ece_facility {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .activity.reverse,
+  .ece_facility.reverse {
+    flex-direction: row;
+  }
+
+  .activity_content,
+  .ece_facility_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .learning_heading p,
+  .ece_facilities_section p,
+  .activities_section p,
+  #ece_admission_section p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .learning_heading h3,
+  .ece_facilities_section h3,
+  .activities_section h3,
+  #ece_admission_section h3 {
+    font-size: 1.5rem;
+  }
+
+  .learning_card p {
+    font-size: 1.2rem;
+  }
+
+  .ece_admission_requirements {
+    gap: 2em;
+    flex-direction: row;
+    margin-bottom: 5em;
+  }
+
+  .ece_admission_content p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.5rem;
   }
 
   #ece_admission_section {
@@ -1130,16 +1420,13 @@ a,
   }
 }
 
-/* //////// Desktop Display \\\\\\\\\ */
+/* Screen Size @ 1440px */
 
-@media (min-width: 1024px) {
-  html {
-    font-size: 18px;
-  }
-
+@media (min-width: 1440px) {
   .home_hero_content h1 {
     max-width: 1600px;
   }
+
   .home_hero_content p {
     max-width: 800px;
   }
@@ -1153,6 +1440,7 @@ a,
     padding: 0.8em 2em;
     margin: 0 auto;
   }
+
   .cards,
   .learning_cards {
     flex-direction: row;
@@ -1172,6 +1460,7 @@ a,
     display: block;
     margin: 0 auto;
   }
+
   .cards .card {
     flex: 1;
   }
@@ -1180,24 +1469,25 @@ a,
     flex-direction: row;
   }
 
-  #programs {
-    flex-direction: row;
-    gap: 2em;
-    max-width: 100%;
-  }
-  #facilities {
+  .programs {
     flex-direction: row;
     gap: 2em;
     max-width: 100%;
   }
 
-  #facilities .facility,
-  #programs .program,
-  #home_contact_us form {
+  .facilities {
+    flex-direction: row;
+    gap: 2em;
+    max-width: 100%;
+  }
+
+  .facility,
+  .program,
+  .home_contact_us form {
     flex: 1;
   }
 
-  #home_contact_us h2 {
+  .home_contact_us h2 {
     margin: 1em auto;
   }
 
@@ -1268,7 +1558,6 @@ a,
     margin-bottom: 3em;
   }
 }
-
 /* =========================
    HOVER EFFECTS
    Desktop / Hover Devices Only
