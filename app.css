@@ -237,6 +237,7 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 10rem 0;
+  padding-bottom: 20rem;
   background: rgba(77, 124, 155, 0.95);
   backdrop-filter: blur(10px);
   border-bottom-left-radius: 5rem;
