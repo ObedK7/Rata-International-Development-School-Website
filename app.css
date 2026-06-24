@@ -236,7 +236,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  padding: 2rem 0;
+  padding: 10rem 0;
   background: rgba(77, 124, 155, 0.95);
   backdrop-filter: blur(10px);
   border-bottom-left-radius: 5rem;
@@ -777,6 +777,8 @@ footer ul li {
 
 /* EARLY CHILDHOOD EDUCATION STYLING  */
 
+/* Early Childhood Education Background Begins */
+
 .container-ece {
   background-image: url(./images/classroom\ copy.webp);
   background-position: center;
@@ -789,6 +791,42 @@ footer ul li {
   max-width: 100%;
   box-shadow: #02c4ff 0px 0px 25px 5px;
 }
+
+/* Early Childhood Education Background Ends */
+
+/* Primary Education Background Begins */
+
+.container-primary {
+  background-image: url(./images/prbackground.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 5em;
+  border-bottom-right-radius: 0.25em;
+  padding-bottom: 5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  box-shadow: #02c4ff 0px 0px 25px 5px;
+}
+
+/* Primary Education Background Ends */
+
+/* Junior High Education Background Begins */
+
+.container-junior {
+  background-image: url(./images/junior_high.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 5em;
+  border-bottom-right-radius: 0.25em;
+  padding-bottom: 5rem;
+  margin: 0 auto;
+  max-width: 100%;
+  box-shadow: #02c4ff 0px 0px 25px 5px;
+}
+
+/* Junior High Education Background Ends */
 
 .ece_hero .ece {
   color: #fff;
@@ -1417,6 +1455,27 @@ a,
 
   #ece_admission_section {
     margin-bottom: 3em;
+  }
+
+  .activity_image,
+  .ece_facility_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .activity_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5em;
+  }
+
+  .ece_facility_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2em;
   }
 }
 
