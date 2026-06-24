@@ -256,7 +256,7 @@ body {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 500;
   transition: all 0.7s ease-in-out;
 }
@@ -1079,7 +1079,7 @@ a,
 /* /////// Tablet Display ////// */
 
 @media (min-width: 768px) {
-  .navbar {
+  /* .navbar {
     padding: 1.2rem 0;
   }
 
@@ -1093,7 +1093,7 @@ a,
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0;
     background: transparent;
     backdrop-filter: none;
@@ -1103,6 +1103,114 @@ a,
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+  } */
+
+  /* =========================
+   NAVBAR — MOBILE FIRST
+========================= */
+
+  .navbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 1rem 0;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-container {
+    width: min(90%, 1600px);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Logo */
+
+  .navbar-logo {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Hamburger Button */
+
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /* Hamburger Bars */
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Hamburger Animation */
+
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* Mobile Menu */
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 10rem 0;
+    padding-bottom: 20rem;
+    background: rgba(77, 124, 155, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 5rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Show Menu */
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  /* Nav Links */
+
+  .navbar-menu li a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.7s ease-in-out;
   }
 
   .home_hero_content h1 {
@@ -1266,6 +1374,35 @@ a,
 /* //////// Desktop Display \\\\\\\\\ */
 
 @media (min-width: 1024px) {
+
+
+ .navbar {
+    padding: 1.2rem 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-menu {
+    position: static;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    background: transparent;
+    backdrop-filter: none;
+  }
+
+  .navbar-menu li a {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.2rem;
+  }
+
   .home_hero_content h1 {
     max-width: 1600px;
     font-size: 2.5rem;
