@@ -142,7 +142,7 @@ body {
 }
 
 .container {
-  background-image: url(./images/ece_background\ copy.webp);
+  background-image: url(./images/ece_background_copy.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -781,7 +781,7 @@ footer ul li {
 /* Early Childhood Education Background Begins */
 
 .container-ece {
-  background-image: url(./images/classroom\ copy.webp);
+  background-image: url(./images/classroom_copy.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1374,9 +1374,7 @@ a,
 /* //////// Desktop Display \\\\\\\\\ */
 
 @media (min-width: 1024px) {
-
-
- .navbar {
+  .navbar {
     padding: 1.2rem 0;
   }
 

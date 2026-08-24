@@ -193,6 +193,11 @@ input[type="date"] {
   column-gap: 25px;
 }
 
+#contactHint {
+  text-align: right;
+  margin-right: 2.5rem;
+}
+
 @media (max-width: 500px) {
   .parent-option {
     display: flex;

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Dashboard</title>
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background overlay for mobile sidebar -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar-brand">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Student Dashboard</span>
+                <!-- Close button for mobile menu -->
+                <button id="closeMenuBtn" class="close-menu-btn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-view="overview"><i class="fa-solid fa-house"></i> Overview</a>
+                <a href="#" class="nav-item" data-view="students"><i class="fa-solid fa-users"></i> Students</a>
+                <a href="#" class="nav-item" data-view="add-student"><i class="fa-solid fa-circle-plus"></i> Add
+                    Student</a>
+                <a href="#" class="nav-item" data-view="courses"><i class="fa-solid fa-book"></i> Courses</a>
+                <a href="#" class="nav-item" data-view="reports"><i class="fa-solid fa-chart-simple"></i> Reports</a>
+                <a href="#" class="nav-item" data-view="settings"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-wrapper">
+
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <!-- Hamburger Button (Mobile Only) -->
+                    <button id="hamburgerBtn" class="hamburger-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h2 id="pageTitle">Overview</h2>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fa-regular fa-bell icon-btn"></i>
+                    <img src="https://ui-avatars.com/api/?name=Admin+User&background=2563eb&color=fff"
+                        alt="Admin Avatar" class="avatar">
+                    <span>Admin</span>
+                </div>
+            </header>
+
+            <!-- Dashboard Body -->
+            <main class="content">
+
+                <!-- Stats Bar Cards -->
+                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon blue"><i class="fa-solid fa-user-group"></i></div>
+                        <div>
+                            <p class="stat-label">Total Students</p>
+                            <h3 id="statTotalStudents" class="stat-value">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green"><i class="fa-solid fa-book-open"></i></div>
+                        <div>
+                            <p class="stat-label">Total Courses</p>
+                            <h3 class="stat-value">18</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange"><i class="fa-solid fa-calendar-days"></i></div>
+                        <div>
+                            <p class="stat-label">This Month</p>
+                            <h3 class="stat-value">32</h3>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon active-blue"><i class="fa-solid fa-user-check"></i></div>
+                        <div>
+                            <p class="stat-label">Active Students</p>
+                            <h3 id="statActiveStudents" class="stat-value">0</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Students Section -->
+                <section class="table-section card">
+                    <div class="table-controls">
+                        <!-- Search Input -->
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="searchInput" placeholder="Search by name or email...">
+                        </div>
+
+                        <!-- Filters -->
+                        <div class="filter-controls">
+                            <select id="courseFilter">
+                                <option value="all">All Courses</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Business Admin">Business Admin</option>
+                                <option value="Nursing Science">Nursing Science</option>
+                                <option value="Information Tech">Information Tech</option>
+                                <option value="Marketing">Marketing</option>
+                            </select>
+
+                            <select id="statusFilter">
+                                <option value="all">All Status</option>
+                                <option value="Active">Active</option>
+                                <option value="Pending">Pending</option>
+                                <option value="Inactive">Inactive</option>
+                            </select>
+
+                            <button id="addStudentModalBtn" class="btn-primary">
+                                <i class="fa-solid fa-plus"></i> Add Student
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Student List Table -->
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>Course</th>
+                                    <th>Date Registered</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="studentTableBody">
+                                <!-- Dynamic <tr> rows generated by JS go here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="./dashboard.js"></script>
+</body>
+
+</html>

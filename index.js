@@ -10,6 +10,9 @@ const motherData = document.querySelector(".mother-data");
 const fatherData = document.querySelector(".father-data");
 const guardianData = document.querySelector(".guardian-data");
 const bothData = document.querySelector(".both-data");
+const registrationForm = document.querySelector("#registrationForm");
+
+
 
 // ==========================================
 // 2. HELPER FUNCTIONS
@@ -28,6 +31,7 @@ hideAllDataBlocks();
 // ==========================================
 // 3. COMPONENT EVENT LISTENERS (Navbar & Forms)
 // ==========================================
+
 
 // Mobile Navbar Toggle
 if (navbarToggle && navbarMenu) {
@@ -57,8 +61,6 @@ document.querySelectorAll("a, button").forEach((element) => {
 // SAFE FORM CONDITIONAL EXECUTION
 // This log and loop will ONLY execute if radio buttons are found on the page!
 if (parentRadios.length > 0) {
-  console.log("Total radio buttons found by JS:", parentRadios.length);
-
   parentRadios.forEach((radio) => {
     radio.addEventListener("change", function () {
       hideAllDataBlocks();
