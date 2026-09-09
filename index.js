@@ -5,33 +5,19 @@ const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarMenu = document.querySelector(".navbar-menu");
 const navLinks = document.querySelectorAll(".navbar-menu li a");
 
-const parentRadios = document.querySelectorAll(".parent-toggle");
-const motherData = document.querySelector(".mother-data");
-const fatherData = document.querySelector(".father-data");
-const guardianData = document.querySelector(".guardian-data");
-const bothData = document.querySelector(".both-data");
-const registrationForm = document.querySelector("#registrationForm");
-
-
-
-// ==========================================
-// 2. HELPER FUNCTIONS
-// ==========================================
-function hideAllDataBlocks() {
-  // Safe execution checks ensure script doesn't crash on pages without these forms
-  if (motherData) motherData.style.display = "none";
-  if (fatherData) fatherData.style.display = "none";
-  if (guardianData) guardianData.style.display = "none";
-  if (bothData) bothData.style.display = "none";
-}
-
-// Initial hide call (Safely executed via function layout)
-hideAllDataBlocks();
 
 // ==========================================
 // 3. COMPONENT EVENT LISTENERS (Navbar & Forms)
 // ==========================================
 
+const copyrightYear = document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const yearSpan = document.getElementById('copyrightYear');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
 
 // Mobile Navbar Toggle
 if (navbarToggle && navbarMenu) {
@@ -58,25 +44,6 @@ document.querySelectorAll("a, button").forEach((element) => {
   });
 });
 
-// SAFE FORM CONDITIONAL EXECUTION
-// This log and loop will ONLY execute if radio buttons are found on the page!
-if (parentRadios.length > 0) {
-  parentRadios.forEach((radio) => {
-    radio.addEventListener("change", function () {
-      hideAllDataBlocks();
-
-      if (this.id === "check-father" && fatherData) {
-        fatherData.style.display = "block";
-      } else if (this.id === "check-mother" && motherData) {
-        motherData.style.display = "block";
-      } else if (this.id === "check-guardian" && guardianData) {
-        guardianData.style.display = "block";
-      } else if (this.id === "check-both-parents" && bothData) {
-        bothData.style.display = "block";
-      }
-    });
-  });
-}
 
 // ==========================================
 // 4. GLOBAL BROWSER WINDOW CONTROLS (Scrolls / History)

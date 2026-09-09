@@ -1076,6 +1076,12 @@ a,
   font-weight: bold;
 }
 
+/* Style the dynamic year specifically if needed */
+#copyrightYear {
+  font-weight: bold;
+  color: white;
+}
+
 /* /////// Tablet Display ////// */
 
 @media (min-width: 768px) {

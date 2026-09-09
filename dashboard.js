@@ -4,6 +4,7 @@ const closeMenuBtn = document.getElementById('closeMenuBtn');
 const sidebar = document.getElementById('sidebar');
 const sidebarOverlay = document.getElementById('sidebarOverlay');
 
+
 // Open Sidebar
 hamburgerBtn.addEventListener('click', () => {
     sidebar.classList.add('active');

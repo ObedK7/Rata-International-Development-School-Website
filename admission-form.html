@@ -28,30 +28,31 @@
         <form action="#" class="form" id="registrationForm" autocomplete="off">
             <div class="input-box">
                 <label for="childName">Child's Name</label>
-                <input type="text" id="childName" placeholder="Enter child's full name" required>
+                <input type="text" id="childName" placeholder="Enter child's full name">
+                <p id="nameHint"></p>
             </div>
             <div class="input-box">
                 <label for="placeOfBirth">Place Of Birth</label>
-                <input type="text" id="placeOfBirth" placeholder="Enter place of birth" required>
+                <input type="text" id="placeOfBirth" placeholder="Enter place of birth">
             </div>
             <div class="input-box">
                 <label for="dateOfBirth">Date of Birth</label>
-                <input type="date" id="dateOfBirth" name="date" placeholder="Date of birth" required>
+                <input type="date" id="dateOfBirth" name="date" placeholder="Date of birth">
             </div>
 
             <div class="input-box">
                 <label for="homeTown">Home Town</label>
-                <input type="text" id="homeTown" placeholder="Enter home town" required>
+                <input type="text" id="homeTown" placeholder="Enter home town">
             </div>
             <div class="input-box address">
                 <label for="motherTongue">Mother's Tongue</label>
-                <input type="text" id="motherTongue" placeholder="Enter mother's tongue" required>
+                <input type="text" id="motherTongue" placeholder="Enter mother's tongue">
             </div>
             <div class="input-box class-admitted">
                 <label>Class Admitted</label>
             </div>
             <div class="select-box">
-                <select required id="classAdmitted">
+                <select id="classAdmitted">
                     <option value="" disabled selected>Class Admitted</option>
                     <option value="creche">Creche/Nursery</option>
                     <option value="kg-1">Kindergarten 1</option>
@@ -70,19 +71,19 @@
                 <h3>Child Lives With</h3>
                 <div class="parent-option" id="parentSelected">
                     <div class="radio-option">
-                        <input type="radio" id="check-father" class="parent-toggle" name="radio">
+                        <input type="radio" id="check-father" class="parent-toggle" name="radio" value="father">
                         <label for="check-father">Father</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="check-mother" class="parent-toggle" name="radio">
+                        <input type="radio" id="check-mother" class="parent-toggle" name="radio" value="mother">
                         <label for="check-mother">Mother</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="check-both-parents" class="parent-toggle" name="radio">
+                        <input type="radio" id="check-both-parents" class="parent-toggle" name="radio" value="both">
                         <label for="check-both-parents">Both</label>
                     </div>
                     <div class="radio-option">
-                        <input type="radio" id="check-guardian" class="parent-toggle" name="radio">
+                        <input type="radio" id="check-guardian" class="parent-toggle" name="radio" value="guardian">
                         <label for="check-guardian">Guardian</label>
                     </div>
                 </div>
@@ -92,11 +93,11 @@
                 <h3>Gender</h3>
                 <div class="gender-option" id="genderSelected">
                     <div class="gender">
-                        <input type="radio" id="check-male" name="gender">
+                        <input type="radio" id="check-male" name="gender" value="Male">
                         <label for="check-male">Male</label>
                     </div>
                     <div class="gender">
-                        <input type="radio" id="check-female" name="gender">
+                        <input type="radio" id="check-female" name="gender" value="Female">
                         <label for="check-female">Female</label>
                     </div>
                 </div>
@@ -106,12 +107,12 @@
                     <div class="input-box">
                         <h3>Mother's Details</h3>
                         <label>Mother's Full Name</label>
-                        <input type="text" id="motherName" placeholder="Enter mother's full name" required>
+                        <input type="text" id="motherName" placeholder="Enter mother's full name">
                         <div class="input-box column">
-                            <input type="text" id="motherAddress" placeholder="Enter address" required>
-                            <input type="text" id="motherContact" maxlength="10" placeholder="Enter contact" required>
+                            <input type="text" id="motherAddress" placeholder="Enter address">
+                            <input type="text" id="motherContact" maxlength="10" placeholder="Enter contact">
                         </div>
-                            <p id="contactHint"></p>
+                        <p id="motherContactHint" class="contactHint"></p>
                     </div>
                 </div>
 
@@ -119,12 +120,12 @@
                     <div class="input-box">
                         <h3>Father's Details</h3>
                         <label>Father's Full Name</label>
-                        <input type="text" id="fatherName" placeholder="Enter father's full name" required>
+                        <input type="text" id="fatherName" placeholder="Enter father's full name">
                         <div class="input-box column">
-                            <input type="text" id="fatherAddress" placeholder="Enter address" required>
-                            <input type="text" id="fatherContact" maxlength="10" placeholder="Enter contact" required>
+                            <input type="text" id="fatherAddress" placeholder="Enter address">
+                            <input type="text" id="fatherContact" maxlength="10" placeholder="Enter contact">
                         </div>
-                        <p id="contactHint"></p>
+                        <p id="fatherContactHint" class="contactHint"></p>
                     </div>
                 </div>
 
@@ -132,14 +133,12 @@
                     <div class="input-box">
                         <h3>Guardian's Details</h3>
                         <label>Guardian's Full Name</label>
-                        <input type="text" id="guardianName" placeholder="Enter guardian's full name" required>
+                        <input type="text" id="guardianName" placeholder="Enter guardian's full name">
                         <div class="input-box column">
-                            <input type="text" id="guardianAddress" placeholder="Enter address" required>
-                            <input type="text" id="guardianContact" maxlength="10" placeholder="Enter contact" required>
+                            <input type="text" id="guardianAddress" placeholder="Enter address">
+                            <input type="text" id="guardianContact" maxlength="10" placeholder="Enter contact">
                         </div>
-
-                        <p id="contactHint"></p>
-
+                        <p id="guardianContactHint" class="contactHint"></p>
                     </div>
                 </div>
 
@@ -148,32 +147,33 @@
                     <div class="input-box">
                         <h3>Both Parent's Details</h3>
                         <label>Mother's Full Name</label>
-                        <input type="text" id="motherName" placeholder="Enter mother's full name" required>
+                        <input type="text" id="bothMotherName" placeholder="Enter mother's full name">
                     </div>
                     <div class="input-box column">
-                        <input type="text" id="motherAddress" placeholder="Enter address" required>
-                        <input type="text" id="motherContact" maxlength="10" placeholder="Enter contact" required>
+                        <input type="text" id="bothMotherAddress" placeholder="Enter address">
+                        <input type="text" id="bothMotherContact" maxlength="10" placeholder="Enter contact">
                     </div>
 
-                    <p id="contactHint"></p>
+                    <p id="bothMotherContactHint" class="contactHint"></p>
 
                     <div class="input-box">
                         <label>Father's Full Name</label>
-                        <input type="text" id="fatherName" placeholder="Enter father's full name" required>
+                        <input type="text" id="bothFatherName" placeholder="Enter father's full name">
                     </div>
                     <div class="input-box column">
-                        <input type="text" id="fatherAddress" placeholder="Enter address" required>
-                        <input type="text" id="fatherContact" maxlength="10" placeholder="Enter contact" required>
+                        <input type="text" id="bothFatherAddress" placeholder="Enter address">
+                        <input type="text" id="bothFatherContact" maxlength="10" placeholder="Enter contact">
                     </div>
-                    <p id="contactHint"></p>
+                    <p id="bothFatherContactHint" class="contactHint"></p>
                 </div>
             </div>
             <div class="button">
                 <input type="submit" id="registerButton" value="Register">
             </div>
+            <div id="submitSuccessMsg" class="success-message" style="display: none;"></div>
         </form>
     </section>
-    <script src="./index.js"></script>
+    <script src="./registrationForm.js"></script>
 </body>
 
 </html>

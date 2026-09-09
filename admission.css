@@ -193,9 +193,36 @@ input[type="date"] {
   column-gap: 25px;
 }
 
-#contactHint {
+input[type="text"] {
+  text-transform: capitalize;
+}
+
+#bothMotherContactHint,
+.contactHint {
   text-align: right;
-  margin-right: 2.5rem;
+  margin-right: 5em;
+}
+
+.success-message {
+  padding: 12px 16px;
+  margin-top: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  animation: fadeIn 0.3s ease-in-out;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 500px) {
