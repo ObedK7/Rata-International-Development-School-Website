@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./admission.css">
+</head>
+
+<body>
+    <section class="container-form">
+        <div class="back-btn">
+            <a href="./index.html">
+                <button>Go Back</button>
+            </a>
+        </div>
+        <header class="registration">Registration Form</header>
+        <form action="#" class="form" id="registrationForm" autocomplete="off">
+            <div class="input-box">
+                <label for="childName">Child's Name</label>
+                <input type="text" id="childName" placeholder="Enter child's full name">
+                <p id="nameHint"></p>
+            </div>
+            <div class="input-box">
+                <label for="placeOfBirth">Place Of Birth</label>
+                <input type="text" id="placeOfBirth" placeholder="Enter place of birth">
+            </div>
+            <div class="input-box">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="date" id="dateOfBirth" name="date" placeholder="Date of birth">
+            </div>
+
+            <div class="input-box">
+                <label for="homeTown">Home Town</label>
+                <input type="text" id="homeTown" placeholder="Enter home town">
+            </div>
+            <div class="input-box address">
+                <label for="motherTongue">Mother's Tongue</label>
+                <input type="text" id="motherTongue" placeholder="Enter mother's tongue">
+            </div>
+            <div class="input-box class-admitted">
+                <label>Class Admitted</label>
+            </div>
+            <div class="select-box">
+                <select id="classAdmitted">
+                    <option value="" disabled selected>Class Admitted</option>
+                    <option value="Creche/Nursery">Creche/Nursery</option>
+                    <option value="Kindergarten 1">Kindergarten 1</option>
+                    <option value="Kindergarten 2">Kindergarten 2</option>
+                    <option value="Basic 1">Basic 1</option>
+                    <option value="Basic 2">Basic 2</option>
+                    <option value="Basic 3">Basic 3</option>
+                    <option value="Basic 4">Basic 4</option>
+                    <option value="Basic 5">Basic 5</option>
+                    <option value="Basic 6">Basic 6</option>
+                    <option value="Basic 7">Basic 7</option>
+                    <option value="Basic 8">Basic 8</option>
+                </select>
+            </div>
+            <div class="parent-box">
+                <h3>Child Lives With</h3>
+                <div class="parent-option" id="parentSelected">
+                    <div class="radio-option">
+                        <input type="radio" id="check-father" class="parent-toggle" name="radio" value="father">
+                        <label for="check-father">Father</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="check-mother" class="parent-toggle" name="radio" value="mother">
+                        <label for="check-mother">Mother</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="check-both-parents" class="parent-toggle" name="radio" value="both">
+                        <label for="check-both-parents">Both</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="check-guardian" class="parent-toggle" name="radio" value="guardian">
+                        <label for="check-guardian">Guardian</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option" id="genderSelected">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" value="Male">
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender" value="Female">
+                        <label for="check-female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="family-name">
+                <div class="mother-data">
+                    <div class="input-box">
+                        <h3>Mother's Details</h3>
+                        <label>Mother's Full Name</label>
+                        <input type="text" id="motherName" placeholder="Enter mother's full name">
+                        <div class="input-box column">
+                            <input type="text" id="motherAddress" placeholder="Enter address">
+                            <input type="text" id="motherContact" maxlength="10" placeholder="Enter contact">
+                        </div>
+                        <p id="motherContactHint" class="contactHint"></p>
+                    </div>
+                </div>
+
+                <div class="father-data">
+                    <div class="input-box">
+                        <h3>Father's Details</h3>
+                        <label>Father's Full Name</label>
+                        <input type="text" id="fatherName" placeholder="Enter father's full name">
+                        <div class="input-box column">
+                            <input type="text" id="fatherAddress" placeholder="Enter address">
+                            <input type="text" id="fatherContact" maxlength="10" placeholder="Enter contact">
+                        </div>
+                        <p id="fatherContactHint" class="contactHint"></p>
+                    </div>
+                </div>
+
+                <div class="guardian-data">
+                    <div class="input-box">
+                        <h3>Guardian's Details</h3>
+                        <label>Guardian's Full Name</label>
+                        <input type="text" id="guardianName" placeholder="Enter guardian's full name">
+                        <div class="input-box column">
+                            <input type="text" id="guardianAddress" placeholder="Enter address">
+                            <input type="text" id="guardianContact" maxlength="10" placeholder="Enter contact">
+                        </div>
+                        <p id="guardianContactHint" class="contactHint"></p>
+                    </div>
+                </div>
+
+
+                <div class="both-data">
+                    <div class="input-box">
+                        <h3>Both Parent's Details</h3>
+                        <label>Mother's Full Name</label>
+                        <input type="text" id="bothMotherName" placeholder="Enter mother's full name">
+                    </div>
+                    <div class="input-box column">
+                        <input type="text" id="bothMotherAddress" placeholder="Enter address">
+                        <input type="text" id="bothMotherContact" maxlength="10" placeholder="Enter contact">
+                    </div>
+
+                    <p id="bothMotherContactHint" class="contactHint"></p>
+
+                    <div class="input-box">
+                        <label>Father's Full Name</label>
+                        <input type="text" id="bothFatherName" placeholder="Enter father's full name">
+                    </div>
+                    <div class="input-box column">
+                        <input type="text" id="bothFatherAddress" placeholder="Enter address">
+                        <input type="text" id="bothFatherContact" maxlength="10" placeholder="Enter contact">
+                    </div>
+                    <p id="bothFatherContactHint" class="contactHint"></p>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" id="registerButton" value="Register">
+            </div>
+            <div id="submitSuccessMsg" class="success-message" style="display: none;"></div>
+        </form>
+    </section>
+    <script src="./registrationForm.js"></script>
+</body>
+
+</html>
